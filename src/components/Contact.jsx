@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, BookOpen } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 
 const Contact = () => {
@@ -39,6 +39,14 @@ const Contact = () => {
               <span className="font-semibold text-white">Location:</span> Atlanta, Georgia
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
+              <a
+                className="inline-flex items-center gap-2 rounded-full border border-purple-400/40 bg-purple-500/15 px-3 py-2 text-indigo-100 shadow-card transition hover:-translate-y-0.5 hover:border-indigo-200 hover:text-white"
+                href="https://www.blogger.com/profile/17287213991303947640"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BookOpen size={16} /> blogger.com/profile/17287213991303947640
+              </a>
               <a
                 className="inline-flex items-center gap-2 rounded-full border border-indigo-400/40 bg-indigo-500/15 px-3 py-2 text-indigo-100 shadow-card transition hover:-translate-y-0.5 hover:border-indigo-200 hover:text-white"
                 href="https://github.com/noahw2025"

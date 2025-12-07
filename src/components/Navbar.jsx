@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, X, Github, Linkedin } from 'lucide-react';
+import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
 
 const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/experience', label: 'Experience' },
+  { to: '/coursework', label: 'Coursework' },
   { to: '/projects', label: 'Projects' },
   { to: '/contact', label: 'Contact' },
 ];
@@ -61,6 +62,14 @@ const Navbar = () => {
               Download Resume
             </a>
             <a
+              className="inline-flex items-center gap-2 rounded-full border border-purple-400/40 bg-purple-500/15 px-3 py-2 text-sm font-semibold text-indigo-100 transition hover:-translate-y-0.5 hover:border-indigo-200 hover:text-white"
+              href="https://www.blogger.com/profile/17287213991303947640"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BookOpen size={16} /> Blog
+            </a>
+            <a
               className="inline-flex items-center gap-2 rounded-full border border-indigo-400/40 bg-indigo-500/15 px-3 py-2 text-sm font-semibold text-indigo-100 transition hover:-translate-y-0.5 hover:border-indigo-200 hover:text-white"
               href="https://github.com/noahw2025"
               target="_blank"
@@ -110,6 +119,15 @@ const Navbar = () => {
                 Download Resume
               </a>
               <div className="flex flex-wrap gap-2 pt-1">
+                <a
+                  className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-purple-400/40 bg-purple-500/15 px-3 py-2 font-semibold text-indigo-100 transition hover:border-indigo-200 hover:text-white"
+                  href="https://www.blogger.com/profile/17287213991303947640"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setOpen(false)}
+                >
+                  <BookOpen size={16} /> Blog
+                </a>
                 <a
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-indigo-400/40 bg-indigo-500/15 px-3 py-2 font-semibold text-indigo-100 transition hover:border-indigo-200 hover:text-white"
                   href="https://github.com/noahw2025"
