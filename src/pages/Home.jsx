@@ -53,7 +53,7 @@ const Home = () => (
           transition={{ duration: 0.45, delay: 0.12 }}
         >
           {[
-            { label: 'GPA', value: '3.93' },
+            { label: 'GPA', value: '3.90' },
             { label: 'IoT nodes', value: '20+' },
             { label: 'Storage plotted', value: '90TB' },
           ].map((stat) => (
